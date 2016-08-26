@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		470BA3551D955B6F008F4FE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 470BA3541D955B21008F4FE1 /* main.m */; };
+		470BA3561D955BA9008F4FE1 /* TWCColourGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 470BA3511D955B21008F4FE1 /* TWCColourGenerator.m */; };
+		470BA3571D955BA9008F4FE1 /* TWCConsoleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 470BA3531D955B21008F4FE1 /* TWCConsoleParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47CAEBEB1D7080B00072715C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		470BA3501D955B21008F4FE1 /* TWCColourGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWCColourGenerator.h; sourceTree = "<group>"; };
+		470BA3511D955B21008F4FE1 /* TWCColourGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWCColourGenerator.m; sourceTree = "<group>"; };
+		470BA3521D955B21008F4FE1 /* TWCConsoleParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWCConsoleParser.h; sourceTree = "<group>"; };
+		470BA3531D955B21008F4FE1 /* TWCConsoleParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWCConsoleParser.m; sourceTree = "<group>"; };
+		470BA3541D955B21008F4FE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47CAEBED1D7080B00072715C /* TWCColourGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TWCColourGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47CAEBEA1D7080B00072715C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470BA34F1D955B21008F4FE1 /* TWCColourGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				470BA3501D955B21008F4FE1 /* TWCColourGenerator.h */,
+				470BA3511D955B21008F4FE1 /* TWCColourGenerator.m */,
+				470BA3521D955B21008F4FE1 /* TWCConsoleParser.h */,
+				470BA3531D955B21008F4FE1 /* TWCConsoleParser.m */,
+				470BA3541D955B21008F4FE1 /* main.m */,
+			);
+			path = TWCColourGenerator;
+			sourceTree = "<group>";
+		};
+		47CAEBE41D7080B00072715C = {
+			isa = PBXGroup;
+			children = (
+				470BA34F1D955B21008F4FE1 /* TWCColourGenerator */,
+				47CAEBEE1D7080B00072715C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47CAEBEE1D7080B00072715C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47CAEBED1D7080B00072715C /* TWCColourGenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47CAEBEC1D7080B00072715C /* TWCColourGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47CAEBF41D7080B00072715C /* Build configuration list for PBXNativeTarget "TWCColourGenerator" */;
+			buildPhases = (
+				47CAEBE91D7080B00072715C /* Sources */,
+				47CAEBEA1D7080B00072715C /* Frameworks */,
+				47CAEBEB1D7080B00072715C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TWCColourGenerator;
+			productName = ColourGen;
+			productReference = 47CAEBED1D7080B00072715C /* TWCColourGenerator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47CAEBE51D7080B00072715C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tom Clark";
+				TargetAttributes = {
+					47CAEBEC1D7080B00072715C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 47CAEBE81D7080B00072715C /* Build configuration list for PBXProject "TWCColourGenerator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47CAEBE41D7080B00072715C;
+			productRefGroup = 47CAEBEE1D7080B00072715C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47CAEBEC1D7080B00072715C /* TWCColourGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47CAEBE91D7080B00072715C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470BA3561D955BA9008F4FE1 /* TWCColourGenerator.m in Sources */,
+				470BA3571D955BA9008F4FE1 /* TWCConsoleParser.m in Sources */,
+				470BA3551D955B6F008F4FE1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		47CAEBF21D7080B00072715C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		47CAEBF31D7080B00072715C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		47CAEBF51D7080B00072715C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = TWCColourGenerator;
+			};
+			name = Debug;
+		};
+		47CAEBF61D7080B00072715C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = TWCColourGenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47CAEBE81D7080B00072715C /* Build configuration list for PBXProject "TWCColourGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CAEBF21D7080B00072715C /* Debug */,
+				47CAEBF31D7080B00072715C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47CAEBF41D7080B00072715C /* Build configuration list for PBXNativeTarget "TWCColourGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CAEBF51D7080B00072715C /* Debug */,
+				47CAEBF61D7080B00072715C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47CAEBE51D7080B00072715C /* Project object */;
+}
