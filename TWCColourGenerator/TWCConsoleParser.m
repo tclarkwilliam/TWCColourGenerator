@@ -15,12 +15,12 @@
     switch (opt) {
       case 'h': {
         printf("\nUsage:\n");
-        printf("  ./TWCColourGenerator -i <input path> -o <output path> -n <name>\n");
+        printf("  ./TWCColourGenerator -i <~/path> -o <~/path> -n <name>\n");
         printf("Options:\n");
-        printf("  -i <input path> Path to and including .clr file (Required)\n");
-        printf("  -o <output path> Path to dump file              (Required)\n");
-        printf("  -n <name> Extension name                        (Required)\n");
-        printf("  -p <prefix> Prefix for colour name function     (Optional)\n\n");
+        printf("  -i <~/path> Path to and including .clr file (Required)\n");
+        printf("  -o <~/path> Path to dump file               (Required)\n");
+        printf("  -n <name> Extension name                    (Required)\n");
+        printf("  -p <prefix> Prefix for colour name function (Optional)\n\n");
         break;
       }
       case 'i': {
