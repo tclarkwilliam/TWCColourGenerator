@@ -1,11 +1,12 @@
-@import Foundation;
-@import Cocoa;
+#import "TWCLanguage.h"
 
 @interface TWCColourGenerator : NSObject
 
-+ (void)generateColourListWithInputPath:(NSString *)inputPath
-                             outputPath:(NSString *)outputPath
-                               fileName:(NSString *)fileName
-                                 prefix:(NSString *)prefix;
+- (instancetype)initWithWithInputPath:(NSString *)inputPath
+                           outputPath:(NSString *)outputPath
+                             fileName:(NSString *)fileName
+                               prefix:(NSString *)prefix
+                             language:(id<TWCLanguage>)language;
+- (void)generateColours;
 
 @end
