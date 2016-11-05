@@ -13,7 +13,6 @@ Support is included for both Swift and Objective-C. Pass in the required languag
 #### Command line arguments
 `./TWCColourGenerator -i <~/path> -o <~/path> -n <name> -l <language>`
 
-#### Parameters
 Required:
 - `-i <~/path> Path to and including .clr file`
 - `-o <~/path> Path to dump file`
