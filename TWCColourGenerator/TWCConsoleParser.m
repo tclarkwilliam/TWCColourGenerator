@@ -4,16 +4,21 @@
 #import "TWCFileFormatSwift.h"
 #import "TWCFileFormatObjectiveC.h"
 
+@interface TWCConsoleParser ()
+
+@property (nonatomic, copy) NSString *inputPath;
+@property (nonatomic, copy) NSString *outputPath;
+@property (nonatomic, copy) NSString *fileName;
+@property (nonatomic, copy) NSString *prefix;
+@property (nonatomic, copy) NSString *language;
+
+@end
+
 @implementation TWCConsoleParser
 
-+ (void)startWithArgc:(int)argc
+- (void)startWithArgc:(int)argc
                  argv:(const char **)argv
 {
-  NSString *inputPath = @"";
-  NSString *outputPath = @"";
-  NSString *fileName = @"";
-  NSString *prefix = @"";
-  NSString *language = @"";
   NSArray *options = [[NSProcessInfo processInfo] arguments];
   char opt;
   while ((opt = getopt(argc, (char *const*)argv, "i:o:n:l:p:h")) != -1) {
@@ -30,23 +35,23 @@
         break;
       }
       case 'i': {
-        inputPath = [[NSString alloc] initWithUTF8String:optarg];
+        self.inputPath = [[NSString alloc] initWithUTF8String:optarg];
         break;
       }
       case 'o': {
-        outputPath = [[NSString alloc] initWithUTF8String:optarg];
+        self.outputPath = [[NSString alloc] initWithUTF8String:optarg];
         break;
       }
       case 'n': {
-        fileName = [[NSString alloc] initWithUTF8String:optarg];
+        self.fileName = [[NSString alloc] initWithUTF8String:optarg];
         break;
       }
       case 'l': {
-        language = [[NSString alloc] initWithUTF8String:optarg];
+        self.language = [[NSString alloc] initWithUTF8String:optarg];
         break;
       }
       case 'p': {
-        prefix = [[NSString alloc] initWithUTF8String:optarg];
+        self.prefix = [[NSString alloc] initWithUTF8String:optarg];
         break;
       }
       default:
@@ -54,19 +59,47 @@
     }
   }
   if (![options containsObject:@"-h"]) {
-    id<TWCLanguage> lang = nil;
-    if ([language isEqualToString:@"swift"]) {
-      lang = [TWCFileFormatSwift new];
-    } else if ([language isEqualToString:@"objc"]) {
-      lang = [TWCFileFormatObjectiveC new];
-    }
-    TWCColourGenerator *generator = [[TWCColourGenerator alloc] initWithWithInputPath:inputPath 
-                                                                           outputPath:outputPath
-                                                                             fileName:fileName
-                                                                               prefix:prefix
-                                                                             language:lang];
-    [generator generateColours];
+    [self checkValidArgs];
   }
+}
+
+- (void)checkValidArgs
+{
+  if ([self validArgs]) {
+    [self createGenerator];
+  } else {
+    NSLog(@"Incorrect argument specified.");
+    exit(0);
+  }
+}
+
+- (BOOL)validArgs
+{
+  return self.inputPath &&
+         self.outputPath &&
+         self.fileName &&
+         [self lang];
+}
+
+- (void)createGenerator
+{
+  TWCColourGenerator *generator = [[TWCColourGenerator alloc] initWithWithInputPath:self.inputPath
+                                                                         outputPath:self.outputPath
+                                                                           fileName:self.fileName
+                                                                             prefix:self.prefix
+                                                                           language:[self lang]];
+  [generator generateColours];
+}
+
+- (id<TWCLanguage>)lang
+{
+  id<TWCLanguage> lang = nil;
+  if ([self.language isEqualToString:@"swift"]) {
+    lang = [TWCFileFormatSwift new];
+  } else if ([self.language isEqualToString:@"objc"]) {
+    lang = [TWCFileFormatObjectiveC new];
+  }
+  return lang;
 }
 
 @end

@@ -8,7 +8,7 @@
 @property (nonatomic, copy) NSString *outputPath;
 @property (nonatomic, copy) NSString *fileName;
 @property (nonatomic, copy) NSString *prefix;
-@property (nonatomic, weak) id<TWCLanguage> language;
+@property (nonatomic, strong) id<TWCLanguage> language;
 
 @end
 
@@ -33,7 +33,6 @@
 
 - (void)generateColours
 {
-  [self checkValidLanguage];
   NSMutableArray *colours = [NSMutableArray array];
   NSMutableArray *colourNames = [NSMutableArray array];
   for (NSString *colourName in [[self colourList] allKeys]) {
@@ -65,14 +64,6 @@
 - (TWCLanguageAdapter *)adapter
 {
   return [[TWCLanguageAdapter alloc] initWithLanguage:self.language];
-}
-
-- (void)checkValidLanguage
-{
-  if (!self.language) {
-    NSLog(@"Incorrect language specified. Must be swift or objc.");
-    exit(0);
-  }
 }
 
 @end

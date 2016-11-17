@@ -2,7 +2,7 @@
 
 @interface TWCLanguageAdapter ()
 
-@property (nonatomic, weak) id<TWCLanguage> language;
+@property (nonatomic, strong) id<TWCLanguage> language;
 
 @end
 
