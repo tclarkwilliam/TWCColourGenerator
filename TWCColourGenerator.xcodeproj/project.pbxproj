@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		470BA3551D955B6F008F4FE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 470BA3541D955B21008F4FE1 /* main.m */; };
-		470BA3561D955BA9008F4FE1 /* TWCColourGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 470BA3511D955B21008F4FE1 /* TWCColourGenerator.m */; };
-		470BA3571D955BA9008F4FE1 /* TWCConsoleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 470BA3531D955B21008F4FE1 /* TWCConsoleParser.m */; };
-		47278A0E1DCCD1CA00DA59F8 /* TWCLanguageAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 47278A0D1DCCD1CA00DA59F8 /* TWCLanguageAdapter.m */; };
-		47278A121DCE01CA00DA59F8 /* TWCFileFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 47278A111DCE01CA00DA59F8 /* TWCFileFormat.m */; };
-		479A60141DB11D7E00B83C38 /* TWCFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A60131DB11D7E00B83C38 /* TWCFileGenerator.m */; };
-		47EEDECD1DA7CEEF00D28A08 /* TWCFileFormatSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EEDECC1DA7CEEF00D28A08 /* TWCFileFormatSwift.m */; };
-		47EEDED01DA7D47100D28A08 /* TWCFileFormatObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EEDECF1DA7D47100D28A08 /* TWCFileFormatObjectiveC.m */; };
+		477269AE1DF1C6F200784942 /* ConsoleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477269AD1DF1C6F200784942 /* ConsoleParser.swift */; };
+		477269B01DF1D47C00784942 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477269AF1DF1D47C00784942 /* main.swift */; };
+		4788A0051E3027CE0012B208 /* FileFormatObjectiveCStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4788A0041E3027CE0012B208 /* FileFormatObjectiveCStrategy.swift */; };
+		47A117C61E2938B300C2D382 /* ColourGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A117C51E2938B300C2D382 /* ColourGenerator.swift */; };
+		47A117C81E2ADBFA00C2D382 /* FileFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A117C71E2ADBFA00C2D382 /* FileFormat.swift */; };
+		47A117CA1E2B803100C2D382 /* FileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A117C91E2B803100C2D382 /* FileGenerator.swift */; };
+		47A117CC1E2BB56500C2D382 /* FileFormatStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A117CB1E2BB56500C2D382 /* FileFormatStrategy.swift */; };
+		47A117CE1E2BB92700C2D382 /* NSString+CamelCaseName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A117CD1E2BB92700C2D382 /* NSString+CamelCaseName.swift */; };
+		47A117D01E2BBFA500C2D382 /* FileFormatSwiftStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A117CF1E2BBFA500C2D382 /* FileFormatSwiftStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,23 +31,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		470BA3501D955B21008F4FE1 /* TWCColourGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWCColourGenerator.h; sourceTree = "<group>"; };
-		470BA3511D955B21008F4FE1 /* TWCColourGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWCColourGenerator.m; sourceTree = "<group>"; };
-		470BA3521D955B21008F4FE1 /* TWCConsoleParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWCConsoleParser.h; sourceTree = "<group>"; };
-		470BA3531D955B21008F4FE1 /* TWCConsoleParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWCConsoleParser.m; sourceTree = "<group>"; };
-		470BA3541D955B21008F4FE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		47278A0C1DCCD1CA00DA59F8 /* TWCLanguageAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCLanguageAdapter.h; sourceTree = "<group>"; };
-		47278A0D1DCCD1CA00DA59F8 /* TWCLanguageAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCLanguageAdapter.m; sourceTree = "<group>"; };
-		47278A0F1DCCD36D00DA59F8 /* TWCLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCLanguage.h; sourceTree = "<group>"; };
-		47278A101DCE01CA00DA59F8 /* TWCFileFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCFileFormat.h; sourceTree = "<group>"; };
-		47278A111DCE01CA00DA59F8 /* TWCFileFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCFileFormat.m; sourceTree = "<group>"; };
-		479A60121DB11D7E00B83C38 /* TWCFileGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCFileGenerator.h; sourceTree = "<group>"; };
-		479A60131DB11D7E00B83C38 /* TWCFileGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCFileGenerator.m; sourceTree = "<group>"; };
+		477269AD1DF1C6F200784942 /* ConsoleParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleParser.swift; sourceTree = "<group>"; };
+		477269AF1DF1D47C00784942 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4788A0041E3027CE0012B208 /* FileFormatObjectiveCStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileFormatObjectiveCStrategy.swift; sourceTree = "<group>"; };
+		47A117C51E2938B300C2D382 /* ColourGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourGenerator.swift; sourceTree = "<group>"; };
+		47A117C71E2ADBFA00C2D382 /* FileFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileFormat.swift; sourceTree = "<group>"; };
+		47A117C91E2B803100C2D382 /* FileGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileGenerator.swift; sourceTree = "<group>"; };
+		47A117CB1E2BB56500C2D382 /* FileFormatStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileFormatStrategy.swift; sourceTree = "<group>"; };
+		47A117CD1E2BB92700C2D382 /* NSString+CamelCaseName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+CamelCaseName.swift"; sourceTree = "<group>"; };
+		47A117CF1E2BBFA500C2D382 /* FileFormatSwiftStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileFormatSwiftStrategy.swift; sourceTree = "<group>"; };
 		47CAEBED1D7080B00072715C /* TWCColourGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TWCColourGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
-		47EEDECB1DA7CEEF00D28A08 /* TWCFileFormatSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCFileFormatSwift.h; sourceTree = "<group>"; };
-		47EEDECC1DA7CEEF00D28A08 /* TWCFileFormatSwift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCFileFormatSwift.m; sourceTree = "<group>"; };
-		47EEDECE1DA7D47100D28A08 /* TWCFileFormatObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCFileFormatObjectiveC.h; sourceTree = "<group>"; };
-		47EEDECF1DA7D47100D28A08 /* TWCFileFormatObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCFileFormatObjectiveC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,22 +57,15 @@
 		470BA34F1D955B21008F4FE1 /* TWCColourGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				470BA3521D955B21008F4FE1 /* TWCConsoleParser.h */,
-				470BA3531D955B21008F4FE1 /* TWCConsoleParser.m */,
-				470BA3501D955B21008F4FE1 /* TWCColourGenerator.h */,
-				470BA3511D955B21008F4FE1 /* TWCColourGenerator.m */,
-				47278A0C1DCCD1CA00DA59F8 /* TWCLanguageAdapter.h */,
-				47278A0D1DCCD1CA00DA59F8 /* TWCLanguageAdapter.m */,
-				479A60121DB11D7E00B83C38 /* TWCFileGenerator.h */,
-				479A60131DB11D7E00B83C38 /* TWCFileGenerator.m */,
-				47EEDECB1DA7CEEF00D28A08 /* TWCFileFormatSwift.h */,
-				47EEDECC1DA7CEEF00D28A08 /* TWCFileFormatSwift.m */,
-				47EEDECE1DA7D47100D28A08 /* TWCFileFormatObjectiveC.h */,
-				47EEDECF1DA7D47100D28A08 /* TWCFileFormatObjectiveC.m */,
-				47278A101DCE01CA00DA59F8 /* TWCFileFormat.h */,
-				47278A111DCE01CA00DA59F8 /* TWCFileFormat.m */,
-				47278A0F1DCCD36D00DA59F8 /* TWCLanguage.h */,
-				470BA3541D955B21008F4FE1 /* main.m */,
+				477269AF1DF1D47C00784942 /* main.swift */,
+				477269AD1DF1C6F200784942 /* ConsoleParser.swift */,
+				47A117C51E2938B300C2D382 /* ColourGenerator.swift */,
+				47A117C71E2ADBFA00C2D382 /* FileFormat.swift */,
+				47A117C91E2B803100C2D382 /* FileGenerator.swift */,
+				47A117CF1E2BBFA500C2D382 /* FileFormatSwiftStrategy.swift */,
+				4788A0041E3027CE0012B208 /* FileFormatObjectiveCStrategy.swift */,
+				47A117CB1E2BB56500C2D382 /* FileFormatStrategy.swift */,
+				47A117CD1E2BB92700C2D382 /* NSString+CamelCaseName.swift */,
 			);
 			path = TWCColourGenerator;
 			sourceTree = "<group>";
@@ -125,11 +112,12 @@
 		47CAEBE51D7080B00072715C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Tom Clark";
 				TargetAttributes = {
 					47CAEBEC1D7080B00072715C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -155,14 +143,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				470BA3561D955BA9008F4FE1 /* TWCColourGenerator.m in Sources */,
-				47278A121DCE01CA00DA59F8 /* TWCFileFormat.m in Sources */,
-				47EEDECD1DA7CEEF00D28A08 /* TWCFileFormatSwift.m in Sources */,
-				47278A0E1DCCD1CA00DA59F8 /* TWCLanguageAdapter.m in Sources */,
-				479A60141DB11D7E00B83C38 /* TWCFileGenerator.m in Sources */,
-				470BA3571D955BA9008F4FE1 /* TWCConsoleParser.m in Sources */,
-				470BA3551D955B6F008F4FE1 /* main.m in Sources */,
-				47EEDED01DA7D47100D28A08 /* TWCFileFormatObjectiveC.m in Sources */,
+				4788A0051E3027CE0012B208 /* FileFormatObjectiveCStrategy.swift in Sources */,
+				47A117CE1E2BB92700C2D382 /* NSString+CamelCaseName.swift in Sources */,
+				47A117C61E2938B300C2D382 /* ColourGenerator.swift in Sources */,
+				47A117CC1E2BB56500C2D382 /* FileFormatStrategy.swift in Sources */,
+				477269AE1DF1C6F200784942 /* ConsoleParser.swift in Sources */,
+				477269B01DF1D47C00784942 /* main.swift in Sources */,
+				47A117D01E2BBFA500C2D382 /* FileFormatSwiftStrategy.swift in Sources */,
+				47A117C81E2ADBFA00C2D382 /* FileFormat.swift in Sources */,
+				47A117CA1E2B803100C2D382 /* FileGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +172,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -227,8 +218,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -247,20 +240,30 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		47CAEBF51D7080B00072715C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = TWCColourGenerator;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		47CAEBF61D7080B00072715C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = TWCColourGenerator;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
