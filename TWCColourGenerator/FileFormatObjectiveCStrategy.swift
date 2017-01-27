@@ -1,6 +1,7 @@
 import Foundation
 
-class FileFormatObjectiveCStrategy: NSObject, FileFormatStrategy {
+class FileFormatObjectiveCStrategy: NSObject,
+                                    FileFormatStrategy {
   
   func implementationFormat(colours: Array<String>,
                             fileName: String) -> String {
