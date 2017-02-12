@@ -5,6 +5,12 @@ Custom colour palettes can be created in Xcode and are stored in `~/Library/Colo
 Support is included for both Swift and Objective-C. Pass in the required language as an argument using `-l` in the format `objc` or `swift`.
 
 ### Usage
+
+- `brew install tclarkwilliam/tools/twccolourgenerator`
+- cd into the directory where the above installs to
+
+or
+
 - Clone the project
 - Build
 - Copy the executable in the Products directory to Applications
