@@ -5,7 +5,7 @@ class FileFormatObjectiveCStrategy: NSObject,
   
   func implementationFormat(colours: Array<String>,
                             fileName: String) -> String {
-    let implementation = "#import \"UIColor+OTB.h\"\n\n"
+    let implementation = "#import \"UIColor+\(fileName).h\"\n\n"
     let mutableImplementation = NSMutableString(string: implementation)
     let colours = colours.joined(separator: "")
     let body = "@implementation UIColor (\(fileName))\n\n\(colours)@end"
@@ -31,7 +31,7 @@ class FileFormatObjectiveCStrategy: NSObject,
   
   func functionName(prefix: String,
                     colourName: String) -> String {
-    let adjustedPrefix = prefix.characters.count > 0 ? prefix.appending("_") : ""
+    let adjustedPrefix = prefix.count > 0 ? prefix.appending("_") : ""
     let camelCaseColourName = NSString.camelCaseName(colourName: colourName)
     return "+ (UIColor *)\(adjustedPrefix)\(camelCaseColourName)Colour;\n"
   }

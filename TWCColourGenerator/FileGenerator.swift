@@ -26,7 +26,7 @@ class FileGenerator {
   }
   
   func implementationFunction(colourName: String) -> String {
-    let colour: NSColor = self.colourList.color(withKey: colourName)!
+    let colour: NSColor = self.colourList.color(withKey: NSColor.Name(rawValue: colourName))!
     var red: CGFloat = 0
     var green: CGFloat = 0
     var blue: CGFloat = 0

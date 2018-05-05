@@ -8,6 +8,7 @@ class ConsoleParser {
   var fileName = ""
   var prefix = ""
   var language = ""
+  var isHelp = false
   
   func start() {
     let arguments = CommandLine.arguments
@@ -15,14 +16,15 @@ class ConsoleParser {
       self.count += 1
       switch option {
       case "-h":
+        self.isHelp = true
         print("\nUsage:");
         print("  ./TWCColourGenerator -i <~/path> -o <~/path> -n <name> -l <language>")
         print("Options:")
         print("  -i <~/path> Path to and including .clr file (Required)")
         print("  -o <~/path> Path to dump file               (Required)")
         print("  -n <name> Extension name                    (Required)")
-        print("  -p <prefix> Prefix for colour name function (Optional)\n")
         print("  -l <language (objc / swift)> Language       (Required)")
+        print("  -p <prefix> Prefix for colour name function (Optional)\n")
       case "-i":
         self.inputPath = arguments[self.count]
       case "-o":
@@ -37,12 +39,14 @@ class ConsoleParser {
         break
       }
     }
-    self.checkValidArguments()
+    if !self.isHelp {
+      self.checkValidArguments()
+    }
   }
   
   private func checkValidArguments() {
     for argument in self.requiredArguments() {
-      if argument.characters.count == 0 || self.fileFormat() == nil {
+      if argument.count == 0 || self.fileFormat() == nil {
         print("Incorrect argument specified")
         exit(0)
       } else {
