@@ -25,8 +25,8 @@ class ColourGenerator {
     var colourNames = [String]()
     if let colourList = self.colourList() {
       for colourName in colourList.allKeys {
-        colourNames.append(self.fileGenerator().interfaceFunctionName(colourName: colourName))
-        colours.append(self.fileGenerator().implementationFunction(colourName: colourName))
+        colourNames.append(self.fileGenerator().interfaceFunctionName(colourName: colourName.rawValue))
+        colours.append(self.fileGenerator().implementationFunction(colourName: colourName.rawValue))
       }
       self.fileGenerator().writeInterfaceToFile(colourNames: colourNames)
       self.fileGenerator().writeImplementationToFile(colours: colours)
@@ -38,7 +38,7 @@ class ColourGenerator {
     let colourPaletteName = colourPalettePathURL?.lastPathComponent
     var colourList: NSColorList?
     if let colourPaletteName = colourPaletteName {
-      colourList = NSColorList(name: colourPaletteName,
+      colourList = NSColorList(name: NSColorList.Name(rawValue: colourPaletteName),
                                fromFile: colourPalettePathURL?.relativeString)
     }
     return colourList

@@ -32,9 +32,9 @@ class FileFormatSwiftStrategy: NSObject,
   
   func functionName(prefix: String,
                     colourName: String) -> String {
-    let adjustedPrefix = prefix.characters.count > 0 ? prefix : ""
+    let adjustedPrefix = prefix.count > 0 ? prefix : ""
     let trimmedColourName = colourName.replacingOccurrences(of: " ", with: "")
-    return "  class var \(adjustedPrefix)\(trimmedColourName): UIColor "
+    return "  @objc class var \(adjustedPrefix)\(trimmedColourName): UIColor "
   }
   
   func interfaceFormat(colours: Array<String>,
